@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octavio Barrios Tapia | Mi página personal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f6fa;
+            color: #26334a;
+        }
+
+        nav {
+            background-color: #14213d;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e7a84b;
+        }
+
+        header {
+            background: linear-gradient(135deg, #14213d, #3975a8);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #244a7c;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .sobre-mi {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            line-height: 1.8;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .cursos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .ciclo {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .ciclo h3 {
+            color: #3975a8;
+            margin-bottom: 15px;
+        }
+
+        .ciclo ul {
+            padding-left: 20px;
+            line-height: 2;
+        }
+
+        .amigos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .amigo {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .descripcion-amigos {
+            text-align: center;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .linkedin {
+            text-align: center;
+            background: #eaf2ff;
+            padding: 40px 20px;
+            border-radius: 15px;
+        }
+
+        .linkedin p {
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .boton-linkedin {
+            display: inline-block;
+            background-color: #0A66C2;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton-linkedin:hover {
+            background-color: #004182;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 700px) {
+            .cursos {
+                grid-template-columns: 1fr;
+            }
+
+            .amigos {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .amigos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#cursos">Mis cursos</a>
+        <a href="#amigos">Mis amigos</a>
+        <a href="#linkedin">LinkedIn</a>
+    </nav>
+
+    <!-- PRESENTACIÓN -->
+    <header id="inicio">
+        <h1>Octavio Barrios Tapia</h1>
+        <p>Bienvenido a mi página personal</p>
+        <p>Estudiante de Administración</p>
+    </header>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre">
+        <h2>Sobre mí</h2>
+
+        <div class="sobre-mi">
+            <p>
+                ¡Hola! Me llamo Octavio Barrios Tapia.
+                Me gusta viajar y salir con mis amigos, porque
+                disfruto mucho conocer lugares nuevos, relajarme,
+                divertirme y crear recuerdos que siempre me acompañan.
+            </p>
+
+            <br>
+
+            <p>
+                Actualmente estudio Administración, una carrera
+                que se adapta mucho mejor a mis intereses y a lo
+                que quiero lograr en mi futuro profesional.
+            </p>
+
+            <br>
+
+            <p>
+                Me considero una persona sociable, me gusta conectar
+                con los demás y siempre trato de dar lo mejor de mí.
+                También soy curioso, determinado y con muchas ganas
+                de crecer, tanto en lo personal como en lo académico.
+            </p>
+        </div>
+    </section>
+
+    <!-- MIS CURSOS -->
+    <section id="cursos">
+        <h2>Mis cursos y malla curricular</h2>
+
+        <div class="cursos">
+
+            <div class="ciclo">
+                <h3>Ciclo I</h3>
+                <ul>
+                    <li>Comunicación I</li>
+                    <li>Matemática Básica</li>
+                    <li>Introducción a la Vida Universitaria</li>
+                    <li>Metodología de la Investigación</li>
+                    <li>Fundamentos de Administración</li>
+                    <li>Contabilidad para Administradores</li>
+                    <li>Economía General</li>
+                </ul>
+            </div>
+
+            <div class="ciclo">
+                <h3>Ciclo II</h3>
+                <ul>
+                    <li>Comunicación II</li>
+                    <li>Álgebra y Geometría</li>
+                    <li>Introducción a la Filosofía</li>
+                    <li>Teatro</li>
+                    <li>Fundamentos de Marketing</li>
+                    <li>Pensamiento Crítico e Innovación</li>
+                    <li>Derecho Empresarial</li>
+                </ul>
+            </div>
+
+            <div class="ciclo">
+                <h3>Ciclo III</h3>
+                <ul>
+                    <li>Cálculo en Una Variable</li>
+                    <li>Antropología Filosófica y Teológica</li>
+                    <li>Análisis Financiero</li>
+                    <li>Introducción a Ciencias de la Computación</li>
+                    <li>Comportamiento del Consumidor</li>
+                    <li>Apreciación Artística y Musical</li>
+                    <li>Lógica y Argumentación</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MIS AMIGOS -->
+    <section id="amigos">
+        <h2>Mis amigos</h2>
+
+        <p class="descripcion-amigos">
+            En la universidad he conocido a personas increíbles
+            que se han convertido en mis amigos. Cada uno aporta
+            algo especial a mi vida, y juntos hemos creado recuerdos,
+            momentos divertidos y experiencias que me han acompañado
+            durante toda mi etapa universitaria. Valoro mucho esas
+            amistades porque me motivan, me acompañan y hacen que
+            el día a día sea más llevadero.
+        </p>
+
+        <div class="amigos">
+            <div class="amigo">Rafaela Tejada</div>
+            <div class="amigo">Mya Broders</div>
+            <div class="amigo">Valeria Alcázar Esquivel</div>
+            <div class="amigo">Daniela Manrique</div>
+            <div class="amigo">Bruno Velásquez</div>
+        </div>
+    </section>
+
+    <!-- LINKEDIN -->
+    <section id="linkedin">
+        <div class="linkedin">
+            <h2>Conóceme profesionalmente</h2>
+
+            <p>
+                También puedes visitar mi perfil de LinkedIn,
+                donde comparto mi perfil profesional y mi
+                trayectoria académica.
+            </p>
+
+            <a
+                href="https://www.linkedin.com/in/octavio-barrios-tapia-a67a34341/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="boton-linkedin">
+                Visitar mi LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Octavio Barrios Tapia</p>
+        <p>Mi página web personal</p>
+    </footer>
+
+</body>
+</html>
