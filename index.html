@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -97,6 +98,8 @@
             line-height: 2;
         }
 
+        /* SECCION DE AMIGOS */
+
         .amigos {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -110,6 +113,23 @@
             border-radius: 12px;
             font-weight: bold;
             box-shadow: 0 4px 12px #00000010;
+            text-decoration: none;
+            color: #26334a;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .amigo:hover {
+            transform: translateY(-5px);
+            background: #eaf2ff;
+            color: #3975a8;
+        }
+
+        .amigo span {
+            display: block;
+            margin-top: 12px;
+            color: #0A66C2;
+            font-size: 14px;
         }
 
         .descripcion-amigos {
@@ -117,6 +137,8 @@
             line-height: 1.8;
             margin-bottom: 25px;
         }
+
+        /* LINKEDIN */
 
         .linkedin {
             text-align: center;
@@ -146,6 +168,8 @@
             transform: translateY(-3px);
         }
 
+        /* PIE DE PAGINA */
+
         footer {
             background: #14213d;
             color: white;
@@ -153,6 +177,8 @@
             padding: 25px;
             line-height: 1.8;
         }
+
+        /* DISEÑO RESPONSIVE */
 
         @media (max-width: 700px) {
             .cursos {
@@ -183,7 +209,8 @@
 
 <body>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- MENU DE NAVEGACION -->
+
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#sobre">Sobre mí</a>
@@ -192,14 +219,16 @@
         <a href="#linkedin">LinkedIn</a>
     </nav>
 
-    <!-- PRESENTACIÓN -->
+    <!-- PRESENTACION -->
+
     <header id="inicio">
         <h1>Octavio Barrios Tapia</h1>
         <p>Bienvenido a mi página personal</p>
         <p>Estudiante de Administración</p>
     </header>
 
-    <!-- SOBRE MÍ -->
+    <!-- SOBRE MI -->
+
     <section id="sobre">
         <h2>Sobre mí</h2>
 
@@ -231,6 +260,7 @@
     </section>
 
     <!-- MIS CURSOS -->
+
     <section id="cursos">
         <h2>Mis cursos y malla curricular</h2>
 
@@ -278,7 +308,8 @@
         </div>
     </section>
 
-    <!-- MIS AMIGOS -->
+    <!-- MIS AMIGOS CON SUS ENLACES -->
+
     <section id="amigos">
         <h2>Mis amigos</h2>
 
@@ -293,15 +324,67 @@
         </p>
 
         <div class="amigos">
-            <div class="amigo">Rafaela Tejada</div>
-            <div class="amigo">Mya Broders</div>
-            <div class="amigo">Valeria Alcázar Esquivel</div>
-            <div class="amigo">Daniela Manrique</div>
-            <div class="amigo">Bruno Velásquez</div>
+
+            <!-- RAFAELA -->
+
+            <a href="https://rafaelatejadaramirez.netlify.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="amigo">
+                👩‍💻
+                <h3>Rafaela Tejada</h3>
+                <span>Visitar su página ↗</span>
+            </a>
+
+            <!-- MYA -->
+
+            <a href="https://myabroders.netlify.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="amigo">
+                👩‍💻
+                <h3>Mya Broders</h3>
+                <span>Visitar su página ↗</span>
+            </a>
+
+            <!-- VALERIA -->
+
+            <a href="https://valeria-alcazar-esquivel.netlify.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="amigo">
+                👩‍💻
+                <h3>Valeria Alcázar Esquivel</h3>
+                <span>Visitar su página ↗</span>
+            </a>
+
+            <!-- DANIELA -->
+
+            <a href="https://danielamanrique-art.github.io/danielamanrique/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="amigo">
+                👩‍💻
+                <h3>Daniela Manrique</h3>
+                <span>Visitar su página ↗</span>
+            </a>
+
+            <!-- BRUNO -->
+
+            <a href="https://brunovelasquez1801.github.io/brunovelasquez18.github.io/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="amigo">
+                👨‍💻
+                <h3>Bruno Velásquez</h3>
+                <span>Visitar su página ↗</span>
+            </a>
+
         </div>
     </section>
 
     <!-- LINKEDIN -->
+
     <section id="linkedin">
         <div class="linkedin">
             <h2>Conóceme profesionalmente</h2>
@@ -322,7 +405,8 @@
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
+    <!-- PIE DE PAGINA -->
+
     <footer>
         <p>© 2026 Octavio Barrios Tapia</p>
         <p>Mi página web personal</p>
@@ -330,3 +414,4 @@
 
 </body>
 </html>
+
